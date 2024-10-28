@@ -1,16 +1,61 @@
-# simple_currency_converter
+# Currency Converter with Flutter💸
 
-A new Flutter project.
+Simple application to convert currency denominations from one to another instantly, by fetching real-time conversion rates through API.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Straightforward UI
+- Instant conversion
+- Real-time rates fetched through an API
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshot
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Home Screen](assets/screenshot.jpg)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Technical Overview
+
+- Uses basic state management using setState() and initState()
+- Flutter Widgets: TextField, Icon
+- Conversion rates fetched through API
+- Manual math logic for result calculation
+
+## Future Enhancements
+
+To integrate more currencies.
+
+## Installation and Setup
+
+### Prerequisites
+
+- [Flutter SDK](https://flutter.dev/docs/get-started/install) installed on your machine.
+- An editor like [Android Studio](https://developer.android.com/studio) or [Visual Studio Code](https://code.visualstudio.com/).
+
+To run this project on your local machine, follow these steps:
+
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/dshryn/currency_converter.git
+    cd currency_converter
+    ```
+
+2. **Install Dependencies**:
+    ```bash
+    flutter pub get
+    ```
+
+3. **Run the App**:
+    ```bash
+    flutter run
+    ```
+    
+## Additional Information
+
+### Dependencies
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  http: ^1.2.1
+
