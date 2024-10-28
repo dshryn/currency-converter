@@ -75,7 +75,7 @@ class _CurrencyConverterAppState extends State<CurrencyConverterApp> {
                 Padding(
                   padding: const EdgeInsets.all(38),
                   child: Opacity(
-                    opacity: 0.7,
+                    opacity: 0.8,
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(200.0),
                       child: Image.asset(
