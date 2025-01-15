@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "C:/Users/dshry/Dart/currency_converter/windows/runner"
+    "cmake.sourceDirectory": "C:/Users/dshry/Dart/currency_converter/windows/runner",
+    "java.configuration.updateBuildConfiguration": "automatic"
 }

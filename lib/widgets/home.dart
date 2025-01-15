@@ -68,7 +68,7 @@ class _CurrencyConverterAppState extends State<CurrencyConverterApp> {
           backgroundColor: const Color.fromARGB(255, 0, 2, 15),
         ),
         body: Padding(
-          padding: const EdgeInsets.all(17),
+          padding: const EdgeInsets.only(bottom: 17, left: 17, right: 17),
           child: SingleChildScrollView(
             child: Column(
               children: [
