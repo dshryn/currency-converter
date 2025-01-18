@@ -31,14 +31,21 @@ class _CurrencyConverterAppState extends State<CurrencyConverterApp> {
   }
 
   Future<void> _getRate() async {
-    var response = await http
-        .get(Uri.parse('https://api.exchangerate-api.com/v4/latest/$fromCurr'));
+    if (fromCurr == toCurr) {
+      setState(() {
+        rate = 1.0; // Same currency, rate is 1
+      });
+      _updateTotal();
+    } else {
+      var response = await http.get(
+          Uri.parse('https://api.exchangerate-api.com/v4/latest/$fromCurr'));
 
-    var data = json.decode(response.body);
-    setState(() {
-      rate = data['rates'][toCurr];
-    });
-    _updateTotal();
+      var data = json.decode(response.body);
+      setState(() {
+        rate = data['rates'][toCurr];
+      });
+      _updateTotal();
+    }
   }
 
   void _updateTotal() {
